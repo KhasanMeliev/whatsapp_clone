@@ -6,7 +6,6 @@ export const Wrapper = styled.div`
   background-color: white;
   display: flex;
   flex-direction: column;
-  font-family: cursive;
   `
 
 export const Box = styled.div`

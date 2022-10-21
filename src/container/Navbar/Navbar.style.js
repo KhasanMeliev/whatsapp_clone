@@ -9,7 +9,6 @@ export const NavbarWrapper = styled.header`
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  font-family: cursive;
 `;
 
 export const Logo = styled.div`

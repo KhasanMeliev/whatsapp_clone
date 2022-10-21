@@ -1,22 +1,20 @@
 import React from 'react'
+import users from '../../mocks/chats'
 import { Box, Message, Wrapper } from './Chats.style'
 
 const Chats = () => {
     return (
         <Wrapper>
-            <Box>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_INtnGRHGT8cN9AiEFvTpLkVlLCdLakqtMyXu16zK0g&s" alt="" />
+            {users.map((user) => (
+                <Box key={user.id}>
+                <img src={user.profile_pic} alt="" />
                 <Message>
-                    <h2>mukhriddin_m</h2>
-                    <p>Hello</p>
+                        <h2>{user.name}</h2>
+                        <p>{ user.message}</p>
                 </Message>
-                <h6>19:34</h6>
+                    <h6>{user.time}</h6>
             </Box>
-            <Box>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcyosA3Bq3y4UQhBc76lKnNuVMU-c-X-OZw&usqp=CAU" alt="" />
-            </Box> <Box>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcyosA3Bq3y4UQhBc76lKnNuVMU-c-X-OZw&usqp=CAU" alt="" />
-            </Box>
+            ))}
         </Wrapper>
     )
 }

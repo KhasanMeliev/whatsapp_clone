@@ -24,7 +24,7 @@ export const Box = styled.div`
   }
 
   h6{
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
     
   }

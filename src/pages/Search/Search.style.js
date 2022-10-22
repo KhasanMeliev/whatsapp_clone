@@ -39,18 +39,6 @@ export const Buttons = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-
-  button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    padding: 15px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    gap: 5px;
-  }
 `;
 
 export const Users = styled.div`

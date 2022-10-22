@@ -3,6 +3,7 @@ import { Lists, Logo, NavbarWrapper, Search } from "./Navbar.style";
 import { FaCamera, FaSearch } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Menu } from "@mantine/core";
 
 const Navbar = () => {
   return (
@@ -13,7 +14,19 @@ const Navbar = () => {
           <Link to="/search" style={{ color: "inherit" }}>
             <FaSearch />
           </Link>
-          <BsThreeDotsVertical />
+
+          <Menu shadow="md" width={200}>
+            <Menu.Target>
+              <BsThreeDotsVertical />
+            </Menu.Target>
+            <Menu.Dropdown>
+              <Menu.Item>New Group</Menu.Item>
+              <Menu.Item>New Broadcast</Menu.Item>
+              <Menu.Item>Linked Devices</Menu.Item>
+              <Menu.Item>Starred messages</Menu.Item>
+              <Menu.Item>Settings</Menu.Item>
+            </Menu.Dropdown>
+          </Menu>
         </Search>
       </Logo>
       <Lists>

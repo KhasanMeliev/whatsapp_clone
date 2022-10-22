@@ -1,5 +1,5 @@
 import React from "react";
-import users from "../../mocks/chats";
+import users from "mocks/chats";
 import { Box, Message, MessageIcon, SendMessage, Wrapper } from "./Chats.style";
 import { BiMessageDetail } from "react-icons/bi";
 const Chats = () => {

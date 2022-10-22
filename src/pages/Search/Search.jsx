@@ -16,6 +16,18 @@ import { HiGif } from "react-icons/hi2";
 import { SlEarphones } from "react-icons/sl";
 import { CgFileDocument } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import ButtonWithIcon from "../../components/SearchComponents/ButtonWithIcon";
+
+const buttons = [
+  { title: "Unread", icon: IoMailUnread },
+  { title: "Photos", icon: MdPhotoSizeSelectActual },
+  { title: "Videos", icon: BsCameraVideoFill },
+  { title: "Links", icon: IoLinkSharp },
+  { title: "GIFs", icon: HiGif },
+  { title: "Audio", icon: SlEarphones },
+  { title: "Documents", icon: CgFileDocument },
+];
+
 const Search = () => {
   return (
     <Wrapper>
@@ -27,34 +39,13 @@ const Search = () => {
           <input type="search" placeholder="Search..." />
         </SearchInput>
         <Buttons>
-          <button>
-            <IoMailUnread />
-            Unread
-          </button>
-          <button>
-            <MdPhotoSizeSelectActual />
-            Photos
-          </button>
-          <button>
-            <BsCameraVideoFill />
-            Videos
-          </button>
-          <button>
-            <IoLinkSharp />
-            Links
-          </button>
-          <button>
-            <HiGif />
-            GIFs
-          </button>
-          <button>
-            <SlEarphones />
-            Audio
-          </button>
-          <button>
-            <CgFileDocument />
-            Documents
-          </button>
+          {buttons.map((button, index) => (
+            <ButtonWithIcon
+              key={index}
+              Icon={button.icon}
+              title={button.title}
+            />
+          ))}
         </Buttons>
       </SearchBox>
       <Users>

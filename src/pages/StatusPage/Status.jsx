@@ -1,6 +1,8 @@
 import React from "react";
 import {
   Box,
+  Camera,
+  CameraIcon,
   Icon,
   MyStatus,
   OtherStatus,
@@ -11,7 +13,7 @@ import {
 } from "./Status.style";
 import { FaPlus, FaWhatsapp } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
-
+import { AiFillCamera } from "react-icons/ai";
 const Status = () => {
   return (
     <Wrapper>
@@ -40,6 +42,11 @@ const Status = () => {
           </TickIcon>
         </OtherStatus>
       </MyStatus>
+      <Camera>
+        <CameraIcon>
+          <AiFillCamera />
+        </CameraIcon>
+      </Camera>
     </Wrapper>
   );
 };

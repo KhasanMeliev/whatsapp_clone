@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 80vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   font-family: cursive;
 `;
 
 export const MyStatus = styled.div`
   width: 100%;
-  height: 100px;
-
+  display: flex;
+  flex-direction: column;
   h3 {
     margin-left: 20px;
     font-weight: 400;
@@ -30,7 +29,7 @@ export const Profile = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 50px 0px 10px;
+  padding: 0px 30px 0px 10px;
 
   img {
     width: 55px;
@@ -105,4 +104,37 @@ export const TickIcon = styled.div`
   color: white;
   border: 1px dashed white;
   margin: 0px -5px;
+`;
+
+export const Camera = styled.div`
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    width: 80%;
+    text-align: center;
+  }
+`;
+
+export const CameraIcon = styled.div`
+  width: 60px;
+  height: 60px;
+  background-color: #0a5d52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  cursor: pointer;
+
+  svg {
+    color: white;
+    font-size: 25px;
+  }
 `;

@@ -22,7 +22,7 @@ const Call = () => {
         </p>
 
         <CallIcon>
-            <HiOutlinePhoneMissedCall/>
+          <HiOutlinePhoneMissedCall />
         </CallIcon>
       </Calls>
     </Wrapper>

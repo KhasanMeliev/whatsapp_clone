@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -50,7 +49,6 @@ export const Texts = styled.div`
 
 export const Calls = styled.div`
   width: 100%;
-  height: 80vh;
   background-color: white;
   display: flex;
   align-items: center;
@@ -64,8 +62,8 @@ export const Calls = styled.div`
 `;
 
 export const CallIcon = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background-color: #0a5d52;
   display: flex;
   align-items: center;

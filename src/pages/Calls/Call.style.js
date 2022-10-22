@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: sans-serif;
 `;
 
 export const Box = styled.div`

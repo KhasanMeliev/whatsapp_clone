@@ -25,7 +25,7 @@ export const Box = styled.div`
   align-items: center;
 `;
 export const Profile = styled.div`
-  width: 20%;
+  width: 30%;
   height: 100px;
   display: flex;
   align-items: center;
@@ -82,10 +82,11 @@ export const Icon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: green;
+  background-color: #00ff1f;
   color: white;
-  border: 2px dashed white;
+  border: 3px dashed #5e665e;
   border-radius: 50%;
+  padding: 0px 10px;
   cursor: pointer;
   svg {
     font-size: 25px;
@@ -95,7 +96,7 @@ export const Icon = styled.div`
 export const TickIcon = styled.div`
   width: 17px;
   height: 17px;
-  background-color: green;
+  background-color: #00ff1f;
   border-radius: 50%;
   display: flex;
   align-items: center;

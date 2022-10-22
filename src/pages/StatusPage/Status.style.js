@@ -30,6 +30,7 @@ export const Profile = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0px 50px 0px 10px;
 
   img {
     width: 55px;

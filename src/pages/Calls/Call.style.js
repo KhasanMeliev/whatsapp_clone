@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
 export const Box = styled.div`
   width: 100%;
-  height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
   padding: 0px 15px;
@@ -55,9 +55,29 @@ export const Calls = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   p {
     width: 80%;
     text-align: center;
+  }
+`;
+
+export const CallIcon = styled.div`
+  width: 50px;
+  height: 50px;
+  background-color: #0a5d52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  cursor: pointer;
+
+  svg {
+    color: white;
+    font-size: 25px;
   }
 `;

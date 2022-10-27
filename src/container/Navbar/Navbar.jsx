@@ -14,7 +14,6 @@ const Navbar = () => {
           <Link to="/search" style={{ color: "inherit" }}>
             <FaSearch />
           </Link>
-
           <Menu shadow="md" width={200}>
             <Menu.Target>
               <BsThreeDotsVertical />

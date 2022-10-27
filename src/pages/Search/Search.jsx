@@ -16,7 +16,7 @@ import { HiGif } from "react-icons/hi2";
 import { SlEarphones } from "react-icons/sl";
 import { CgFileDocument } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import ButtonWithIcon from "../../components/SearchComponents/ButtonWithIcon";
+import ButtonWithIcon from "components/SearchComponents/ButtonWithIcon";
 
 const buttons = [
   { title: "Unread", icon: IoMailUnread },
